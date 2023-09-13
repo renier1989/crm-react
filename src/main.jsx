@@ -2,26 +2,37 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import NewClient from './pages/NewClient';
+import Index from './pages';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <h1>Hello here's where the fun begins</h1>
-  },
-{
-  path:'/tags',
-  element: <h1>Tag page</h1>
-}
+    element: <Layout/>,
+    children:[
+      {
+        index:true,
+        element: <Index />
+      },
+      {
+        path:'/new/client',
+        element: <NewClient />
+      }
+    ]
+  }
 ]);
 
 // const router = createHashRouter([
 //   {
 //     path: '/',
-//     element: <h1>Hello here's where the fun begins</h1>
-//   },
-//   {
-//     path:'/tags',
-//     element: <h1>Tag page</h1>
+//     element: <Layout/>,
+//     children:[
+//       {
+//         path:'/tags',
+//         element: <h1>Tag page</h1>
+//       }
+//     ]
 //   }
 // ]);
 
