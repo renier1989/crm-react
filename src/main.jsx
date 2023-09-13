@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import NewClient from './pages/NewClient';
 import Index from './pages';
 
+// const router = createHashRouter([
 const router = createBrowserRouter([
   {
     path: '/',
