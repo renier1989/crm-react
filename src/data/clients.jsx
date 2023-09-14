@@ -2,8 +2,14 @@ export async function getClients(){
     const URL = import.meta.env.VITE_API_URL;
     const reponse = await fetch(URL);
     const result = await reponse.json();
+    return result;
+}
 
-    // console.log(result);
+// this is for the editing
+export async function getClient(id){
+    const URL = `${import.meta.env.VITE_API_URL}/${id}`;
+    const reponse = await fetch(URL);
+    const result = await reponse.json();
     return result;
 }
 
