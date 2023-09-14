@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import NewClient,{action as newClientAction} from './pages/NewClient';
 import Index, { loader as clientsLoader } from './pages';
 import ErrorPage from './components/ErrorPage';
+import EditClient, {loader as editClientLoader} from './pages/EditClient';
 
 // const router = createHashRouter([
 const router = createBrowserRouter([
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         path:'/new/client',
         element: <NewClient />,
         action: newClientAction
+      },
+      {
+        path:'/client/:clientId/edit',
+        element: <EditClient />,
+        loader: editClientLoader
       }
     ]
   }
