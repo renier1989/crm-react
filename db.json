@@ -29,11 +29,12 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 5,
-      "nombre": "Pedro",
-      "telefono": 1398198938,
+      "nombre": "Pedro 2",
+      "empresa": "Codigo Con Juan",
       "email": "pedro@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "1398198938",
+      "notas": "New note",
+      "id": 5
     },
     {
       "nombre": "Renier Vargas",

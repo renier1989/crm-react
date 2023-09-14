@@ -42,7 +42,7 @@ const RegisterForm = ({client}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Email del Cliente"
                     name="email"
-                    defaultValue={client.email}
+                    defaultValue={client?.email}
                 />
             </div>
 
@@ -57,7 +57,7 @@ const RegisterForm = ({client}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Teléfono del Cliente"
                     name="telefono"
-                    defaultValue={client.telefono}
+                    defaultValue={client?.telefono}
                 />
             </div>
 
@@ -73,7 +73,7 @@ const RegisterForm = ({client}) => {
                     className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
                     placeholder="Notas del Cliente"
                     name="notas"
-                    defaultValue={client.notas}
+                    defaultValue={client?.notas}
                 />
             </div>
         </>
