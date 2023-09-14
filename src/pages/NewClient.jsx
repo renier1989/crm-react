@@ -1,9 +1,12 @@
 import { Form, useNavigate } from "react-router-dom";
 import RegisterForm from "../components/RegisterForm";
 
-export function action(){
-  console.log('submit del formulario');
-  return null;
+export async function action({request}){
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+  console.log("🚀 ~ file: NewClient.jsx:7 ~ action ~ data:", data)
+  
+  return data;
 }
 
 function NewClient() {
