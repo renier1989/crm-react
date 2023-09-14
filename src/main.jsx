@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-rou
 import Layout from './components/Layout';
 import NewClient,{action as newClientAction} from './pages/NewClient';
 import Index, { loader as clientsLoader } from './pages';
+import ErrorPage from './components/ErrorPage';
 
 // const router = createHashRouter([
 const router = createBrowserRouter([
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
       {
         index:true,
         element: <Index />,
-        loader: clientsLoader
+        loader: clientsLoader,
+        errorElement: <ErrorPage/>
       },
       {
         path:'/new/client',

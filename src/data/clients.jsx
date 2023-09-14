@@ -3,6 +3,6 @@ export async function getClients(){
     const reponse = await fetch(URL);
     const result = await reponse.json();
 
-    console.log(result);
+    // console.log(result);
     return result;
 }
