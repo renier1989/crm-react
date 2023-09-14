@@ -13,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout/>,
+    errorElement: <ErrorPage/>,
     children:[
       {
         index:true,
@@ -40,19 +41,6 @@ const router = createBrowserRouter([
     ]
   }
 ]);
-
-// const router = createHashRouter([
-//   {
-//     path: '/',
-//     element: <Layout/>,
-//     children:[
-//       {
-//         path:'/tags',
-//         element: <h1>Tag page</h1>
-//       }
-//     ]
-//   }
-// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
