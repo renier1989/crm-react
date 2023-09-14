@@ -5,54 +5,29 @@
       "nombre": "Juan",
       "telefono": 102013313,
       "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Coding Testing"
     },
     {
       "id": 3,
       "nombre": "Josue",
       "telefono": 31983913,
       "email": "josue@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Jose Bussines"
     },
     {
-      "nombre": "Pedro 2",
-      "empresa": "Codigo Con Juan",
+      "nombre": "Pedro",
+      "empresa": "Some Bussines here",
       "email": "pedro@juan.com",
       "telefono": "1398198938",
-      "notas": "New note",
       "id": 5
     },
     {
       "nombre": "Renier Vargas",
-      "empresa": "Nasa",
+      "empresa": "Own Bussines",
       "email": "renier1989@gmail.com",
       "telefono": "123321123",
-      "notas": "This is a new entry from the form.",
+      "notas": "Creating this project",
       "id": 6
-    },
-    {
-      "nombre": "Nuevo Cliente",
-      "empresa": "empresa del cliente",
-      "email": "cliente@gmail.com",
-      "telefono": "123321123",
-      "notas": "fkajsldfj",
-      "id": 7
-    },
-    {
-      "nombre": "otro cliente",
-      "empresa": "otra empresa",
-      "email": "empresa@gmail.com",
-      "telefono": "123323212312",
-      "notas": "nota",
-      "id": 8
-    },
-    {
-      "nombre": "clinete nuevo",
-      "empresa": "cielte",
-      "email": "cielte@djlasd.com",
-      "telefono": "123323123",
-      "notas": "lakdjslf",
-      "id": 9
     }
   ]
 }
