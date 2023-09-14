@@ -34,6 +34,14 @@
       "telefono": 1398198938,
       "email": "pedro@juan.com",
       "empresa": "Codigo Con Juan"
+    },
+    {
+      "nombre": "Renier Vargas",
+      "empresa": "Nasa",
+      "email": "renier1989@gmail.com",
+      "telefono": "123321123",
+      "notas": "This is a new entry from the form.",
+      "id": 6
     }
   ]
 }
