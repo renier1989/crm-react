@@ -1,15 +1,24 @@
-import { Form, useNavigate } from "react-router-dom";
+import { Form, useActionData, useNavigate } from "react-router-dom";
 import RegisterForm from "../components/RegisterForm";
+import Errors from "../components/Errors";
 
 export async function action({request}){
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
-  console.log("🚀 ~ file: NewClient.jsx:7 ~ action ~ data:", data)
   
-  return data;
+  const errors = [];
+  if(Object.values(data).includes("")){
+    errors.push('All fileds are required!');
+  }
+
+  if(Object.keys(errors).length){
+    return errors;
+  }
+  
 }
 
 function NewClient() {
+  const errors = useActionData();  
   const navigate = useNavigate();
   return (
     <>
@@ -31,6 +40,7 @@ function NewClient() {
       </div>
 
       <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10">
+        {errors?.length && errors.map((error, i)=> <Errors key={i}>{error}</Errors>)}
         <Form
         method="post"
         
