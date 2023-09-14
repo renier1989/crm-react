@@ -26,7 +26,7 @@ Rename the .env-example to .env
 
 Start the json-server
 ```bash
-  `json-server --watch db.json`
+  json-server --watch db.json
   npm run dev
 ```
     
