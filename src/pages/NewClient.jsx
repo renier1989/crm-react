@@ -1,5 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { Form, useNavigate } from "react-router-dom";
 import RegisterForm from "../components/RegisterForm";
+
+export function action(){
+  console.log('submit del formulario');
+  return null;
+}
 
 function NewClient() {
   const navigate = useNavigate();
@@ -23,7 +28,10 @@ function NewClient() {
       </div>
 
       <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10">
-        <form>
+        <Form
+        method="post"
+        
+        >
           <RegisterForm />
 
           <input
@@ -31,7 +39,7 @@ function NewClient() {
             className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg cursor-pointer animation hover:bg-blue-700 duration-500"
             value="Register"
           />
-        </form>
+        </Form>
       </div>
     </>
   );

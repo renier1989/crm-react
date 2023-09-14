@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Layout from './components/Layout';
-import NewClient from './pages/NewClient';
+import NewClient,{action as newClientAction} from './pages/NewClient';
 import Index, { loader as clientsLoader } from './pages';
 
 // const router = createHashRouter([
@@ -19,7 +19,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/new/client',
-        element: <NewClient />
+        element: <NewClient />,
+        action: newClientAction
       }
     ]
   }
