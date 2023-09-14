@@ -1,4 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { Form, redirect, useNavigate } from "react-router-dom";
+import { deleteClient } from "../data/clients";
+
+
+export async function action({params}){
+  await deleteClient(params.clientId);
+  return redirect('/');
+}
 
 /* eslint-disable react/prop-types */
 function ClientRow({ client }) {
@@ -18,7 +25,17 @@ function ClientRow({ client }) {
         <button className="text-blue-600 hover:text-blue-700 uppercase font-bold text-xs"
         onClick={()=>navigate(`client/${id}/edit`)}
         >Edit</button>
+        <Form
+        method="post"
+        action={`client/${id}/delete`}
+        onSubmit={(e)=>{
+          if(!confirm('¿Do you want to delete this Client?')){
+            e.preventDefault();
+          }
+        }}
+        >
         <button className="text-red-600 hover:text-red-700 uppercase font-bold text-xs">Delete</button>
+        </Form>
       </td>
     </tr>
   );

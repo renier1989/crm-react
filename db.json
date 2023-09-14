@@ -8,24 +8,10 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 2,
-      "nombre": "Karen",
-      "telefono": 138198313,
-      "email": "karen@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
       "id": 3,
       "nombre": "Josue",
       "telefono": 31983913,
       "email": "josue@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "id": 4,
-      "nombre": "Miguel",
-      "telefono": 319381983,
-      "email": "miguel@juan.com",
       "empresa": "Codigo Con Juan"
     },
     {
@@ -43,6 +29,30 @@
       "telefono": "123321123",
       "notas": "This is a new entry from the form.",
       "id": 6
+    },
+    {
+      "nombre": "Nuevo Cliente",
+      "empresa": "empresa del cliente",
+      "email": "cliente@gmail.com",
+      "telefono": "123321123",
+      "notas": "fkajsldfj",
+      "id": 7
+    },
+    {
+      "nombre": "otro cliente",
+      "empresa": "otra empresa",
+      "email": "empresa@gmail.com",
+      "telefono": "123323212312",
+      "notas": "nota",
+      "id": 8
+    },
+    {
+      "nombre": "clinete nuevo",
+      "empresa": "cielte",
+      "email": "cielte@djlasd.com",
+      "telefono": "123323123",
+      "notas": "lakdjslf",
+      "id": 9
     }
   ]
 }
