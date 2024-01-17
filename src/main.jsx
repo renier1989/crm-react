@@ -8,8 +8,8 @@ import Index, { loader as clientsLoader } from './pages';
 import ErrorPage from './components/ErrorPage';
 import EditClient, {loader as editClientLoader, action as editClientAction} from './pages/EditClient';
 import { action as deleteClientAction } from './components/ClientRow'
-// const router = createHashRouter([
-const router = createBrowserRouter([
+const router = createHashRouter([
+// const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout/>,
