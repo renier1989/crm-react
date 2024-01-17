@@ -1,20 +1,6 @@
 {
   "clients": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
-      "email": "juan@juan.com",
-      "empresa": "Coding Testing"
-    },
-    {
-      "id": 3,
-      "nombre": "Josue",
-      "telefono": 31983913,
-      "email": "josue@juan.com",
-      "empresa": "Jose Bussines"
-    },
-    {
       "nombre": "Pedro",
       "empresa": "Some Bussines here",
       "email": "pedro@juan.com",
@@ -28,6 +14,14 @@
       "telefono": "123321123",
       "notas": "Creating this project",
       "id": 6
+    },
+    {
+      "nombre": "Nancy Carolina",
+      "empresa": "Lisval Studio",
+      "email": "nancy@gmail.com",
+      "telefono": "123321123",
+      "notas": "notas para nancy y su emprendimiento",
+      "id": 7
     }
   ]
 }
